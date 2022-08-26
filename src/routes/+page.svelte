@@ -2,14 +2,6 @@
 
 <div class="main"> 
   <h1>Guillem Sardà Parreu</h1>
-  <div class="clock">
-    <div class="wrap">
-      <span class="hour"></span>
-      <span class="minute"></span>
-      <span class="second"></span>
-      <span class="dot"></span>
-    </div>
-  </div>
 </div>
 
 <style>
