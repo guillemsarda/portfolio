@@ -5,13 +5,9 @@
 </script>
 
 <ul class="carrousel">
-	{#each arr as proj, i}
-		<Project {proj} {i} />
+	{#each arr as proj}
+		<Project {proj} />
 	{/each}
-	<!-- <li class="project-container fa">h</li>
-	<li class="project-container s">h</li>
-	<li class="project-container t ">h</li>
-	<li class="project-container l">h</li> -->
 </ul>
 
 <style>
