@@ -4,7 +4,7 @@
 		{
 			title: 'Parkpal',
 			url: 'https://parkpal-web-omega.vercel.app/',
-			img: '/logo.svg',
+			img: '/parkpal-logo.svg',
 			bgColor: 'rgb(113,69,214)'
 		},
 		{
@@ -13,8 +13,18 @@
 			img: '/npm.svg',
 			bgColor: 'rgb(193,32,39)'
 		},
-		{ title: 'What2Do', url: '', img: '/w2d.png', bgColor: 'rgb(217,240,252)' },
-		{ title: 'Bienvenido Al Globo', url: 'www.bienvenidoalglobo.top', img: '/globo-logo.svg' }
+		{
+			title: 'What2Do',
+			url: 'https://github.com/guillemsarda/what2do',
+			img: '/w2d.png',
+			bgColor: 'rgb(217,240,252)'
+		},
+		{
+			title: 'Bienvenido Al Globo',
+			url: 'https://www.bienvenidoalglobo.top/',
+			img: '/globo-logo.svg',
+			bgColor: 'rgb(248, 249, 250)'
+		}
 	];
 </script>
 
@@ -26,7 +36,6 @@
 
 <style>
 	.carrousel {
-		border: red solid 1px;
 		display: grid;
 		grid-row: span 7;
 		grid-column: 2 / 10;
