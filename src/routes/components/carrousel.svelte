@@ -17,7 +17,7 @@
 			title: 'C-JS-socket',
 			url: 'https://github.com/guillemsarda/C-JS-socket',
 			img: '/socket.png',
-			bgColor: 'rgb(217,240,252)'
+			bgColor: 'rgb(255,255,255)'
 		},
 		{
 			title: 'Bienvenido Al Globo',
