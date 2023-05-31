@@ -1,18 +1,18 @@
-<script>
+<script lang="ts">
 	import { fly, fade } from 'svelte/transition';
 	let visible = 'beginning';
+	interface currentToNextVisibleInt {
+		beginning: string;
+		stack: string;
+	}
+
+	const currentToNextVisible: currentToNextVisibleInt = {
+		beginning: 'stack',
+		stack: 'next'
+	};
+
 	function handleClick() {
-		switch (visible) {
-			case 'beginning':
-				visible = 'stack';
-				break;
-			case 'stack':
-				visible = 'next';
-				break;
-			default:
-				visible = 'beginning';
-				break;
-		}
+		visible = currentToNextVisible[visible as keyof currentToNextVisibleInt] ?? 'beginning';
 	}
 </script>
 
@@ -22,7 +22,7 @@
 			I am a Software Developer (click for more).
 		</p>
 	{:else if visible === 'stack'}
-		<p class="intro-content" in:fly={{ x: 500, duration: 1000 }}>
+		<p class="intro-content" in:fly={{ x: -500, duration: 1000 }}>
 			I am proficient with JavaScript and TypeScript (click for more).
 		</p>
 	{:else if visible === 'next'}

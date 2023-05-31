@@ -1,28 +1,34 @@
 <script>
-	import Info from './components/info.svelte';
+	import Carrousel from './components/carrousel.svelte';
 </script>
 
 <main class="main">
-	<h1>Guillem Sardà Parreu</h1>
-	<Info />
+	<span class="name">
+		<h1>Guillem Sardà Parreu</h1>
+	</span>
+	<Carrousel />
 </main>
 
 <style>
 	.main {
+		display: grid;
+		height: 100vh;
+		grid-template-columns: repeat(10, 1fr);
+		grid-template-rows: repeat(10, 1fr);
+	}
+	.name {
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		text-align: center;
-		height: 100vh;
-		width: 100vw;
+		grid-column: span 20;
+		grid-row: span 2;
 	}
-	h1 {
-		font-family: 'Courier New', Courier, monospace;
-		transition: 1.5s ease;
-		justify-self: center;
+	.name > h1 {
+		font-weight: 100;
+		transition: 0.2s ease;
 	}
-	h1:hover {
+	.name > h1:hover {
+		font-weight: 500;
 		color: #ff3e00;
 	}
 </style>
