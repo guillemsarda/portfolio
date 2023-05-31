@@ -18,15 +18,6 @@
 </li>
 
 <style>
-	.project-container {
-		grid-column: span 2;
-		grid-row: span 2;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		opacity: 0.6;
-		transition: all ease 0.5s;
-	}
 	@keyframes bounce {
 		50% {
 			transform: translateY(-15px);
@@ -35,11 +26,18 @@
 			transform: translateY(0);
 		}
 	}
+	.project-container {
+		grid-column: span 2;
+		grid-row: span 2;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 0.6;
+		transition: all ease-out 0.5s;
+	}
 	.project-container:hover {
 		opacity: 1;
-		animation-name: bounce;
-		animation-duration: 3s;
-		animation-iteration-count: infinite;
+		animation: bounce 3s infinite ease-out;
 	}
 	.project-link {
 		display: flex;

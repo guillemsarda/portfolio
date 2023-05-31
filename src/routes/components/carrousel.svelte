@@ -14,9 +14,9 @@
 			bgColor: 'rgb(193,32,39)'
 		},
 		{
-			title: 'What2Do',
-			url: 'https://github.com/guillemsarda/what2do',
-			img: '/w2d.png',
+			title: 'C-JS-socket',
+			url: 'https://github.com/guillemsarda/C-JS-socket',
+			img: '/socket.png',
 			bgColor: 'rgb(217,240,252)'
 		},
 		{
